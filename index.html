@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>LOVE.exe 💾❤️ Install love for your person</title>
+<meta name="description" content="A retro installer that installs LOVE. Type their name, press Install, send them the link. Made by @hack.n.code">
+<meta property="og:title" content="Someone installed LOVE.exe for you 💾❤️">
+<meta property="og:description" content="Press Install… LOVE.exe by @hack.n.code">
+<meta name="theme-color" content="#008080">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="desk">
+  <div id="win">
+    <div class="tb"><span class="ico" id="ico"></span><span class="tt">LOVE.exe Setup</span>
+      <span class="tbtn">_</span><span class="tbtn">□</span><span class="tbtn">×</span></div>
+    <div id="pIdle" class="pane">
+      <div class="row">
+        <div class="side"><canvas id="sideHeart" width="13" height="11"></canvas></div>
+        <div class="txt">
+          <div class="h1" id="welcome">Welcome to the LOVE.exe Setup Wizard</div>
+          <div class="p">This will install <b>LOVE</b> on your heart.<br>It can't be uninstalled. 😌</div>
+        </div>
+      </div>
+      <label class="lbl" for="name">Install for:</label>
+      <div class="sunken inwrap"><input id="name" maxlength="18" placeholder="Their name" autocomplete="off" spellcheck="false"><span id="caret"></span></div>
+      <div class="btns">
+        <button class="b98" disabled>&lt; Back</button>
+        <button class="b98 main" id="go">Install ❤</button>
+        <button class="b98" id="cancel">Cancel</button>
+      </div>
+    </div>
+    <div id="pInst" class="pane">
+      <div class="h2">Installing LOVE.exe for <b id="forName">you</b>…</div>
+      <div class="step" id="step">Preparing…</div>
+      <div class="sunken bar"><div id="fill"></div></div>
+      <div class="pct"><span id="pct">0%</span><span id="eta">time left: forever ♾️</span></div>
+      <div class="sunken log" id="log"></div>
+      <div class="btns"><button class="b98" disabled>Cancel</button></div>
+    </div>
+  </div>
+  <div id="done">
+    <canvas id="fx"></canvas>
+    <div id="dTop">✔ Installation complete</div>
+    <div id="dMsg"><div class="a">I LOVE YOU,</div><div class="n" id="dName">For you</div></div>
+    <div id="dBtns"><button class="b98" id="replay">↻ Replay</button><button class="b98 main" id="share2">Send it 💌</button></div>
+  </div>
+  <div id="task">
+    <button class="start" id="start"><span class="ico" id="ico2"></span>Start</button>
+    <span class="made">Made by <b>@hack.n.code</b></span>
+    <button class="b98 share" id="share">Share 💌</button>
+    <span class="clock sunken" id="clock">12:00</span>
+  </div>
+  <div id="toast"></div>
+  <div id="crt"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
